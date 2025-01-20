@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/RainbowGoobert.png-bb611fde58a9cdf6ee921dec273e33d4.res"
+group_file="res://Atlases/Items_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Items/Sprites/RainbowGoobert.png"
+dest_files=[ "res://.import/RainbowGoobert.png-bb611fde58a9cdf6ee921dec273e33d4.res" ]
+
+[params]
+
+atlas_file="res://Atlases/Items_atlas.png"
+import_mode=0
+crop_to_region=true
+trim_alpha_border_from_region=false

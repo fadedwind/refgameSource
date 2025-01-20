@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/MagicStaff.png-c5789fed4f131ab75467cb0a7703e13f.res"
+group_file="res://Atlases/Items_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Items/Sprites/MagicStaff.png"
+dest_files=[ "res://.import/MagicStaff.png-c5789fed4f131ab75467cb0a7703e13f.res" ]
+
+[params]
+
+atlas_file="res://Atlases/Items_atlas.png"
+import_mode=0
+crop_to_region=true
+trim_alpha_border_from_region=false

@@ -1,0 +1,54 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Items/Particles/MusicalNotesCanvasItem.material" type="Material" id=1]
+[ext_resource path="res://Assets/Particles/NotesParticles.png" type="Texture" id=2]
+[ext_resource path="res://Shader/SmoothFadeGradient.tres" type="Texture" id=3]
+[ext_resource path="res://Utility/PooledScene.gd" type="Script" id=4]
+
+[sub_resource type="Gradient" id=13]
+colors = PoolColorArray( 0.722656, 0.722656, 0.722656, 1, 0.980469, 0.979347, 0.968979, 1 )
+
+[sub_resource type="GradientTexture" id=18]
+gradient = SubResource( 13 )
+width = 10
+
+[sub_resource type="Curve" id=15]
+max_value = 1.14
+_data = [ Vector2( 0, 0.178409 ), 0.0, 1.44177, 0, 0, Vector2( 1, 1.14 ), 0.598758, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=19]
+width = 200
+curve = SubResource( 15 )
+
+[sub_resource type="ParticlesMaterial" id=17]
+lifetime_randomness = 0.23
+flag_disable_z = true
+spread = 35.32
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 365.59
+initial_velocity_random = 0.48
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 6.1
+angle_random = 1.0
+scale = 0.82
+scale_random = 0.37
+scale_curve = SubResource( 19 )
+color_ramp = ExtResource( 3 )
+color_initial_ramp = SubResource( 18 )
+anim_offset = 1.0
+anim_offset_random = 1.0
+
+[node name="ActivationParticles" type="Particles2D"]
+self_modulate = Color( 2, 2, 2, 0.99 )
+material = ExtResource( 1 )
+position = Vector2( 110, -1 )
+z_index = 1
+emitting = false
+amount = 13
+one_shot = true
+explosiveness = 0.64
+local_coords = false
+process_material = SubResource( 17 )
+texture = ExtResource( 2 )
+script = ExtResource( 4 )

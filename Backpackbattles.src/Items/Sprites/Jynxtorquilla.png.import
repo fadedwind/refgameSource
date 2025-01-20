@@ -1,0 +1,19 @@
+[remap]
+
+importer="texture_atlas"
+type="Texture"
+path="res://.import/Jynxtorquilla.png-68a097c6a4cb48bfc31e111f452c34b8.res"
+group_file="res://Atlases/Items_atlas.png"
+valid=true
+[deps]
+
+
+source_file="res://Items/Sprites/Jynxtorquilla.png"
+dest_files=[ "res://.import/Jynxtorquilla.png-68a097c6a4cb48bfc31e111f452c34b8.res" ]
+
+[params]
+
+atlas_file="res://Atlases/Items_atlas.png"
+import_mode=0
+crop_to_region=true
+trim_alpha_border_from_region=false
